@@ -1,0 +1,151 @@
+/* Neue Haas Grotesk Font Family */
+@font-face {
+    font-family: 'Neue Haas Grotesk';
+    src: url('NHaasGroteskDSPro-15UltTh.otf') format('opentype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Neue Haas Grotesk';
+    src: url('NHaasGroteskDSPro-25Th.otf') format('opentype');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Neue Haas Grotesk';
+    src: url('NHaasGroteskDSPro-35XLt.otf') format('opentype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Neue Haas Grotesk';
+    src: url('NHaasGroteskDSPro-45Lt.otf') format('opentype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Neue Haas Grotesk';
+    src: url('NHaasGroteskDSPro-55Rg.otf') format('opentype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Neue Haas Grotesk';
+    src: url('NHaasGroteskDSPro-65Md.otf') format('opentype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Neue Haas Grotesk';
+    src: url('NHaasGroteskDSPro-75Bd.otf') format('opentype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Neue Haas Grotesk';
+    src: url('NHaasGroteskDSPro-95Blk.otf') format('opentype');
+    font-weight: 900;
+}
+
+/* Mishafi Gold Font */
+@font-face {
+    font-family: "Mishafi Gold Regular";
+    src: url("https://db.onlinewebfonts.com/t/7d39006149fa1fb38ce32ed0d77006b0.eot");
+    src: url("https://db.onlinewebfonts.com/t/7d39006149fa1fb38ce32ed0d77006b0.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/7d39006149fa1fb38ce32ed0d77006b0.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/7d39006149fa1fb38ce32ed0d77006b0.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/7d39006149fa1fb38ce32ed0d77006b0.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/7d39006149fa1fb38ce32ed0d77006b0.svg#Mishafi Gold Regular")format("svg");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Neue Haas Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+body {
+    background-color: aliceblue;
+
+}
+
+header {
+    color: white;
+    font: 1em sans-serif;
+    letter-spacing: 0.2px;
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    background-color: coral;
+    min-height: 100vh;
+}
+.box {
+background-color: aliceblue;
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 2fr 1fr ;
+padding: 1px;
+}
+
+.box {
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: auto auto 1fr;
+font: 1em sans-serif;
+color: hsl(0, 0%, 76%);
+padding-top: 4px;
+padding-left: 10px;
+row-gap: 10px;
+}
+
+#projectList {
+  list-style: none;
+}
+
+.year {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.Bio {
+
+}
+
+.Projects {
+  margin-top: 150px;
+}
+
+.render {
+    display: flex;
+}
+
+.render iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    flex: 1;
+}
+
+h1:hover {
+    color: red;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: 1px solid black;
+}

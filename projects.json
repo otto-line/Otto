@@ -1,0 +1,60 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Drum Magazine",
+      "type": "Brand Design",
+      "date": "2024-03-15",
+      "client": "Drum Magazine",
+      "createdBy": "Sam"
+    },
+    {
+      "id": 2,
+      "name": "Monaghan Farm",
+      "type": "Websites",
+      "date": "2024-02-20",
+      "client": "Monaghan Farm",
+      "createdBy": "Ruby"
+    },
+    {
+      "id": 3,
+      "name": "Corporate Rebrand",
+      "type": "Brand Design",
+      "date": "2024-01-10",
+      "client": "Tech Startup",
+      "createdBy": "Ottoline"
+    },
+    {
+      "id": 4,
+      "name": "E-commerce Platform",
+      "type": "Websites",
+      "date": "2023-12-05",
+      "client": "Online Retailer",
+      "createdBy": "Sam"
+    },
+    {
+      "id": 5,
+      "name": "Book Design Project",
+      "type": "Book Design",
+      "date": "2023-11-15",
+      "client": "Publisher XYZ",
+      "createdBy": "Ruby"
+    },
+    {
+      "id": 6,
+      "name": "Exhibition Layout",
+      "type": "Exhibitions",
+      "date": "2023-10-20",
+      "client": "Modern Art Museum",
+      "createdBy": "Ottoline"
+    },
+    {
+      "id": 7,
+      "name": "Event Poster Series",
+      "type": "Posters",
+      "date": "2023-09-12",
+      "client": "Cultural Events Co.",
+      "createdBy": "Sam"
+    }
+  ]
+}

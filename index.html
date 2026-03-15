@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTTO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> <div class="LOGO"></div></header>
+<div class="main">
+    <div class="container">
+        <div class="box">
+            <div class="Bio"> 
+    otto is a design studio.</div>  
+            <div class="contact">hello@ottoline.com</div>
+            <div class="Projects">
+                <h1>Projects</h1>
+                <ul id="projectList">
+                </ul>
+            </div>
+            
+        </div>
+        <div class="render"><iframe name="content" src="ottwo.html"></iframe></div>
+    </div>
+</div>
+
+<script>
+fetch('projects.json')
+  .then(res => res.json())
+  .then(data => {
+    const ul = document.getElementById('projectList');
+    data.products.forEach(p => {
+      const li = document.createElement('li');
+      const year = p.date.split('-')[0];
+      li.innerHTML = `${p.name}, <span class="year">${year}</span>, ${p.type}, by ${p.createdBy}`;
+      ul.appendChild(li);
+    });
+  });
+</script>
+</body>
+</html>
