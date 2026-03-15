@@ -108,6 +108,15 @@ row-gap: 10px;
   list-style: none;
 }
 
+#projectList li {
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+#projectList li:hover {
+  color: hsl(0, 0%, 20%);
+}
+
 .year {
   font-weight: 300;
   font-style: italic;

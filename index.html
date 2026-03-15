@@ -33,7 +33,11 @@ fetch('projects.json')
     data.products.forEach(p => {
       const li = document.createElement('li');
       const year = p.date.split('-')[0];
+      const slug = p.name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
       li.innerHTML = `${p.name}, <span class="year">${year}</span>, ${p.type}, by ${p.createdBy}`;
+      li.addEventListener('click', () => {
+        document.querySelector('iframe[name="content"]').src = `${slug}.html`;
+      });
       ul.appendChild(li);
     });
   });
